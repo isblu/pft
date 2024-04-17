@@ -1,14 +1,6 @@
 # PFT
-No Life Project
+Personal Finance Tracker
+CS degree first assignment 
+Assignment Overview
 
-    1. Make the UI with tkinter
-    
-    2. Give functionality to the UI
-    
-        2.1 Make the fields input data
-        
-        2.2 Store those inputs into a database
-
-        2.3 Retrieve database content
-
-![erd](https://github.com/Sansith31/nlp/assets/56215884/df373de5-5179-42c0-86f5-9081e181fec5)
+This assignment tasks you with developing a Personal Finance Tracker using Python. Focused on fundamental programming principles like lists, loops, functions, input/output, and input validation, you'll employ list manipulations without the use of dictionaries. Your application will support CRUD operations for managing financial transactions, utilizing JSON for data persistence. This project aims to bolster your understanding of data handling, program design, and testing in a practical context.
