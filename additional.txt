@@ -1,0 +1,13 @@
+def add_transaction():
+    amount = float(input("Enter the amount: "))
+    category = input("Enter the category: ")
+    type = input("Enter the type (Income/Expense): ")
+    date = input("Enter the date (YYYY-MM-DD): ")
+    transactions.append = [amount, category, type, date]
+    save_transactions(transactions)
+
+def add_transaction():
+    description = input("Enter transaction description: ")
+    amount = float(input("Enter transaction amount: "))
+    transactions.append({"description": description, "amount": amount})
+    save_transactions()  # Save transactions after adding
