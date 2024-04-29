@@ -7,7 +7,8 @@ menu = """
 > (2) View transactions
 > (3) Update transactions
 > (4) Remove transactions
-> (5) Eggsit
+> (5) Display Summary
+> (0) Exit
 """
 
 add = """
