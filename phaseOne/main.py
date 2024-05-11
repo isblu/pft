@@ -185,23 +185,22 @@ def delete_transaction():
             main_menu()
 
     print(tabulate([transactions[choice-1]], headers=["No.", "Amount (Rs.)", "Category", "transaction_type", "Date"], tablefmt="rounded_grid"))
-    while True:
-        try:
-            confirm = input("\nDelete Entry? (Y/N): ")
-            confirm = confirm.upper()
-            if confirm == "Y":
-                transactions.pop(choice-1)
-                print("\nTransaction removed!")
+    confirm = None
+    looping = True
 
-                for i in range(choice-1, len(transactions)):
-                    transactions[i][0] = transactions[i][0]-1
-                break
-            if choice == "N":
-                main_menu()
-                break
-        except:
-            print("\nInvalid input!")
-            continue
+    while looping:
+        if not confirm == "y" or confirm == "n":
+            confirm = input("\nDelete Entry? (y/n): ").lower()
+        looping = False
+
+    if confirm == "y":
+        transactions.pop(choice-1)
+        print("\nTransaction removed!")
+
+        for i in range(choice-1, len(transactions)):
+            transactions[i][0] = transactions[i][0]-1
+    if confirm == "n":
+        main_menu()
 
     save_transactions()
 
